@@ -1,11 +1,13 @@
 import pytest
 
-from calculadora import somar, dividir
+from calculadora import somar, dividir, subtrair
 
 
 def test_somar():
-    assert somar(2, 3) == 6
+    assert somar(2, 3) == 5
 
+def test_subtrair():
+    assert subtrair(10 - 5) == 5
 
 def test_dividir():
     assert dividir(10, 2) == 5
